@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+</head>
+<body>
+
+    <div id="sidebar">
+        <div id="sidebarStickyContent">
+            <a href="index.html" id="sidebarHeader">
+                <img src="img/logo.svg" alt="dashboard logo" id="logo">
+                <h1>Dashboard</h1>
+            </a>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <img src="img/home.svg" alt="home" class="icon">
+                        <p>Home</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <img src="img/profile.svg" alt="profile" class="icon">
+                        <p>Profile</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <img src="img/messages.svg" alt="messages" class="icon">
+                        <p>Messages</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <img src="img/history.svg" alt="history" class="icon">
+                        <p>History</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <img src="img/tasks.svg" alt="tasks" class="icon">
+                        <p>Tasks</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <img src="img/communities.svg" alt="communities" class="icon">
+                        <p>Communities</p>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <img src="img/settings.svg" alt="settings" class="icon">
+                        <p>Settings</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <img src="img/support.svg" alt="support" class="icon">
+                        <p>Support</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <img src="img/privacy.svg" alt="privacy" class="icon">
+                        <p>Privacy</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="body">
+
+        <div id="header">
+            <div id="headerTop">
+                <form action="https://httpbin.org/post" method="post">
+                    <img src="img/search.svg" alt="search" class="icon">
+                    <input type="text" name="searchQuery">
+                </form>
+                <div id="userSection">
+                    <a href="index.html"><img src="img/bell.svg" alt="notification bell" class="icon"></a>
+                    <a href="index.html"><img src="img/avatar1.jpg" alt="user avatar" class="avatar"></a>
+                    <a href="index.html"><h3>Morgan Oakley</h3></a>
+                </div>
+            </div>
+            <div id="headerBottom">
+                <div id="headerWelcomeSection">
+                    <img src="img/avatar1.jpg" alt="user avatar" class="avatar">
+                    <div>
+                        <p>Hi there,</p>
+                        <h2>Morgan Oakley (@morgan)</h2>
+                    </div>
+                </div>
+                <div id="headerButtons">
+                    <button>New</button>
+                    <button>Upload</button>
+                    <button>Share</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mainContent">
+            <div>
+                <h3 id="yourProjects">Your projects</h3>
+                <div id="gridContainer">
+                    <div class="card">
+                        <div>
+                            <a href="index.html"><h4>Super Cool Project</h4></a>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo corporis eius ad quia labore repudiandae velit itaque saepe consequuntur maxime cupiditate consequatur, distinctio voluptatem blanditiis nam officiis magnam assumenda quam?</p>
+                        </div>
+                        <div class="cardIcons">
+                            <a href="index.html"><img src="img/star.svg" alt="star icon" class="icon"></a>
+                            <a href="index.html"><img src="img/watch.svg" alt="watch icon" class="icon"></a>
+                            <a href="index.html"><img src="img/link.svg" alt="link icon" class="icon"></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div>
+                            <a href="index.html"><h4>Super Cool Project</h4></a>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo corporis eius ad quia labore repudiandae velit itaque saepe consequuntur maxime cupiditate consequatur, distinctio voluptatem blanditiis nam officiis magnam assumenda quam?</p>
+                        </div>
+                        <div class="cardIcons">
+                            <a href="index.html"><img src="img/star.svg" alt="star icon" class="icon"></a>
+                            <a href="index.html"><img src="img/watch.svg" alt="watch icon" class="icon"></a>
+                            <a href="index.html"><img src="img/link.svg" alt="link icon" class="icon"></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div>
+                            <a href="index.html"><h4>Super Cool Project</h4></a>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo corporis eius ad quia labore repudiandae velit itaque saepe consequuntur maxime cupiditate consequatur, distinctio voluptatem blanditiis nam officiis magnam assumenda quam?</p>
+                        </div>
+                        <div class="cardIcons">
+                            <a href="index.html"><img src="img/star.svg" alt="star icon" class="icon"></a>
+                            <a href="index.html"><img src="img/watch.svg" alt="watch icon" class="icon"></a>
+                            <a href="index.html"><img src="img/link.svg" alt="link icon" class="icon"></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div>
+                            <a href="index.html"><h4>Super Cool Project</h4></a>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo corporis eius ad quia labore repudiandae velit itaque saepe consequuntur maxime cupiditate consequatur, distinctio voluptatem blanditiis nam officiis magnam assumenda quam?</p>
+                        </div>
+                        <div class="cardIcons">
+                            <a href="index.html"><img src="img/star.svg" alt="star icon" class="icon"></a>
+                            <a href="index.html"><img src="img/watch.svg" alt="watch icon" class="icon"></a>
+                            <a href="index.html"><img src="img/link.svg" alt="link icon" class="icon"></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div>
+                            <a href="index.html"><h4>Super Cool Project</h4></a>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo corporis eius ad quia labore repudiandae velit itaque saepe consequuntur maxime cupiditate consequatur, distinctio voluptatem blanditiis nam officiis magnam assumenda quam?</p>
+                        </div>
+                        <div class="cardIcons">
+                            <a href="index.html"><img src="img/star.svg" alt="star icon" class="icon"></a>
+                            <a href="index.html"><img src="img/watch.svg" alt="watch icon" class="icon"></a>
+                            <a href="index.html"><img src="img/link.svg" alt="link icon" class="icon"></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div>
+                            <a href="index.html"><h4>Super Cool Project</h4></a>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo corporis eius ad quia labore repudiandae velit itaque saepe consequuntur maxime cupiditate consequatur, distinctio voluptatem blanditiis nam officiis magnam assumenda quam?</p>
+                        </div>
+                        <div class="cardIcons">
+                            <a href="index.html"><img src="img/star.svg" alt="star icon" class="icon"></a>
+                            <a href="index.html"><img src="img/watch.svg" alt="watch icon" class="icon"></a>
+                            <a href="index.html"><img src="img/link.svg" alt="link icon" class="icon"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="sideSection">
+                <div class="sideThing">
+                    <h3>Announcements</h4>
+                    <div class="sideCard" id="announcements">
+                        <div class="story">
+                            <a href="index.html"><h4>Site Maintenance</h4></a>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam omnis, ad ullam dignissimos aliquid cumque, aspernatur cum tempora, illum minus error ea id! Molestiae ratione impedit ipsam quaerat? Dolorum esse quis quos id, blanditiis architecto minima omnis saepe nostrum, illo molestiae minus delectus ad aspernatur officia. Maxime facere nesciunt consectetur?</p>
+                        </div>
+                        <hr>
+                        <div class="story">
+                            <a href="index.html"><h4>Community Share Day</h4></a>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero laudantium architecto sequi illo obcaecati reprehenderit temporibus ad reiciendis, perferendis, ratione commodi! Laudantium omnis deleniti ipsum facilis esse rerum debitis possimus quis a beatae fugiat sequi iste ad blanditiis, at vero dolore consequuntur quas culpa alias excepturi? Temporibus deserunt vero perspiciatis!</p>
+                        </div>
+                        <hr>
+                        <div class="story">
+                            <a href="index.html"><h4>Updated Privacy Policy</h4></a>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate aut, incidunt amet, exercitationem architecto provident assumenda optio aspernatur, illo sapiente eveniet! Quae, repellat? Exercitationem, officia. Dolorum aspernatur nemo nostrum magni perferendis ipsam ullam autem dignissimos rem obcaecati veniam debitis dolorem incidunt, architecto vitae delectus accusantium ea cumque hic? Minus, culpa.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sideThing">
+                    <h3>Trending</h3>
+                    <div class="sideCard" id="trending">
+                        <a href="index.html">
+                            <div class="user">
+                                <img src="img/avatar2.webp" alt="user avatar" class="avatar">
+                                <div>
+                                    <h4>@tegan</h4>
+                                    <p>World Peace Builder</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="index.html">
+                            <div class="user">
+                                <img src="img/avatar1.jpg" alt="user avatar" class="avatar">
+                                <div>
+                                    <h4>@morgan</h4>
+                                    <p>Super Cool Project</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="index.html">
+                            <div class="user">
+                                <img src="img/avatar3.jpg" alt="user avatar" class="avatar">
+                                <div>
+                                    <h4>@kendall</h4>
+                                    <p>Life Changing App</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="index.html">
+                            <div class="user">
+                                <img src="img/avatar4.webp" alt="user avatar" class="avatar">
+                                <div>
+                                    <h4>@alex</h4>
+                                    <p>No Traffic Maker</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

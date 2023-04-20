@@ -1,0 +1,272 @@
+/* global */
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    --faintShadow: 5px 5px 5px rgb(202, 202, 202);
+    --whiteSvg: invert(100%) sepia(97%) saturate(0%) hue-rotate(6deg) brightness(104%) contrast(103%);
+}
+
+body {
+    display: flex;
+    background-color: #E2E8F0;
+}
+
+.icon {
+    width: 30px;
+}
+.avatar {
+    width: 60px;
+    border-radius: 100px;
+}
+
+
+#body {
+    flex: 5 1 0;
+}
+
+/* sidebar */
+
+#sidebarStickyContent {
+    position: fixed;
+}
+
+#sidebar {
+    background-color: lightskyblue;
+    padding: 30px 0 0 45px;
+    color: white;
+    background-color: #1992D4;
+    font-weight: bold;
+    flex: 1 1 0;
+}
+#sidebar h1 {
+    margin: 0 15px;
+    font-size: 34px;
+}
+#sidebar .icon {
+    filter: var(--whiteSvg);
+}
+#logo {
+    filter: var(--whiteSvg);
+    width: 60px;
+}
+
+#sidebarHeader {
+    display: flex;
+    align-items: center;
+    margin: 0 0 60px 0;
+}
+
+#sidebar ul {
+    margin: 0 0 75px 0;
+}
+
+#sidebar li a {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+#sidebar li a p {
+    margin: 0 20px;
+}
+#sidebar li:hover .icon {
+    transform: translateX(5px);
+}
+#sidebar li .icon {
+    transition: 200ms ease-in-out;
+}
+
+/* header */
+
+#header {
+    background-color: white;
+    padding: 20px 30px 20px 60px;
+    box-shadow: var(--faintShadow);
+}
+
+
+#headerTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form input[type="text"] {
+    background-color: #E2E8F0;
+    border: none;
+    border-radius: 30px;
+    padding: 5px 500px 5px 20px;
+    font-size: 24px;
+}
+form {
+    display: flex;
+    align-items: center;
+}
+form .icon {
+    margin: 0 25px 0 0;
+}
+
+#userSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin: 0 20px 0 0;
+}
+
+
+#headerBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0 0 0;
+}
+
+#headerWelcomeSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#headerWelcomeSection img {
+    width: 100px;
+    margin: 0 30px 0 0;
+}
+#headerWelcomeSection p {
+    margin: 0 0 5px 0;
+}
+
+#headerButtons {
+    display: flex;
+    gap: 40px;
+}
+#headerButtons button {
+    color: white;
+    background-color: #1992D4;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 100px;
+    font-size: 20px;
+    transition: 100ms;
+}
+#headerButtons button:hover {
+    scale: 1.05;
+}
+
+/* main content - cards */
+
+#mainContent p {
+    font-size: 18px;
+}
+#mainContent h3 {
+    font-size: 24px;
+}
+#mainContent h4 {
+    font-size: 20px;
+}
+
+#mainContent {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 25px 40px 30px;
+}
+
+#yourProjects {
+    margin: 0 0 15px 0;
+}
+
+#gridContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    grid-template-rows: repeat(3, 300px);
+    column-gap: 35px;
+    row-gap: 30px;
+    position: sticky;
+    top: 0;
+}
+
+.card {
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: var(--faintShadow);
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card:hover {
+    transform: translateX(5px);
+    box-shadow: var(--faintShadow), -8px 0 #F0B429;
+}
+.card {
+    transition: 200ms ease-in-out;
+}
+
+.card h4 {
+    margin: 0 0 5px 0;
+}
+
+.cardIcons {
+    display: flex;
+    align-self: flex-end;
+    gap: 25px;
+}
+
+.cardIcons img:hover {
+    filter: invert(87%) sepia(19%) saturate(5147%) hue-rotate(341deg) brightness(103%) contrast(88%);
+}
+.cardIcons img {
+    transition: 200ms;
+}
+
+/* main content - side section */
+
+.sideThing {
+    width: 380px;
+    overflow: hidden;
+    margin: 0 0 40px 0;
+}
+.sideThing hr {
+    margin: 30px 10px;
+}
+.sideThing h3 {
+    margin: 0 0 15px 0;
+}
+.sideThing h4 {
+    margin: 0 0 5px 0;
+    transition: 100ms ease-in-out;
+}
+.sideThing h4:hover {
+    color:#F0B429;
+}
+.sideThing p {
+    max-height: 90px;
+    overflow: hidden;
+}
+
+.sideCard {
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: var(--faintShadow);
+    margin: 0 5px 5px 0;
+}
+
+#announcements {
+    padding: 40px 30px 30px 30px;
+}
+#trending {
+    padding: 20px 30px 10px 30px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 0 0 20px 0;
+}
+
+/* czemu to nie dziala */
+#sideSection {
+    position: sticky;
+    top: 0;
+}
